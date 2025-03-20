@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./bookstyle.css">
+</head>
+
+<body>
+    <h1>The Book of Courage</h1>
+    <div class="book-container">
+        <div class="book-cover" style="background-image: url(./images/book3.jpg);"></div>
+        <div class="info-container">
+            <p id="description2" class="toggle-content">
+                <strong>The Book of Courage</strong> by Matthew Kelly The Book of Courage by Matthew Kelly is an inspiring guide that helps readers face life's challenges with strength and resilience. It encourages individuals to overcome fear, embrace personal growth, and cultivate a life of purpose. Through powerful insights and real-life stories, Kelly provides practical wisdom on navigating difficult times while maintaining hope and faith. The book emphasizes the importance of courage in everyday decisions and highlights how small acts of bravery can lead to profound transformation. With its uplifting message and actionable advice, The Book of Courage serves as a roadmap for those seeking to live with greater confidence and fulfillment.
+            </p>
+            <p id="author2" class="toggle-content">
+                Matthew Kelly is a bestselling author, speaker, and business consultant known for his work in personal development and spirituality. Born in Australia, he began speaking at a young age, inspiring millions with his insights on faith, leadership, and self-improvement. His books, including The Rhythm of Life and The Dream Manager, have sold millions of copies worldwide. Kelly’s work focuses on helping individuals and organizations become the best versions of themselves.</p>
+        </div>
+        <div class="button-container">
+            <button onclick="toggleSection('description2')" class="btn btn-info w-100">Description</button>
+            <button onclick="toggleSection('author2')" class="btn btn-warning">Know More About Author</button>
+            <a href="https://www.amazon.in/Book-Courage-Matthew-Kelly/dp/1929266103"
+                target="_blank" class="btn btn-success w-100">Buy This Book</a>
+        </div>
+    </div>
+    
+    <div class="formin">
+        <form class="feedback-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="feedback" class="form-label">Your Feedback:</label>
+                <textarea class="form-control" id="feedback" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <br>
+    <a href="book.html" class="btn btn-danger">Back to Home</a>
+    <br><br>
+</body>
+
+</html>
